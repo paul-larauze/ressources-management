@@ -22,19 +22,19 @@ public class SpringRootConfig {
 		return new NamedParameterJdbcTemplate(dataSource);
 	}
 	
-	@PostConstruct
+	/*@PostConstruct
 	public void startDBManager() {
 		
 		//hsqldb
-		DatabaseManagerSwing.main(new String[] { "--url", "jdbc:hsqldb:mem:testdb", "--user", "sa", "--password", "" });
+		//DatabaseManagerSwing.main(new String[] { "--url", "jdbc:hsqldb:mem:testdb", "--user", "sa", "--password", "" });
 
 		//derby
-		//DatabaseManagerSwing.main(new String[] { "--url", "jdbc:derby:memory:testdb", "--user", "", "--password", "" });
+		DatabaseManagerSwing.main(new String[] { "--url", "jdbc:derby:memory:testdb", "--user", "", "--password", "" });
 
 		//h2
 		//DatabaseManagerSwing.main(new String[] { "--url", "jdbc:h2:mem:testdb", "--user", "sa", "--password", "" });
 
-	}
+	}*/
 	
 	//MethodInvokingBean example
 	/*
